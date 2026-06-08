@@ -1,0 +1,11 @@
+=== XREF target 8c0ad10c ===
+  from 8c01a1f2 type=PARAM fn=no_func
+  from 8c01a304 type=DATA fn=no_func
+  from 8c01a1c8 type=DATA fn=no_func
+  from 8c01a122 type=PARAM fn=FUN_8c01a0c4 @ 8c01a0c4
+=== XREF target 8c0ac450 ===
+  from 8c0af938 type=DATA fn=no_func
+=== XREF target 8c0ac6b0 ===
+  from 8c0b0828 type=DATA fn=no_func
+=== XREF target 8c0b0828 ===
+=== Functions with many 0x80 immediate uses (heuristic) ===

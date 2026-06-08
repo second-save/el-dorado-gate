@@ -1,0 +1,28 @@
+STATIC FREAD / SELOBJ PROOF (no emulator)
+
+=== File table @0x8C0B0828 ===
+  [0] '\\COMN\\selobj.rlc' meta=0x8c0ac4fc
+  [1] 'en_obj00.rlc' meta=0x8c0ac4fc
+  [2] 'btl_fix.tlp' meta=0x8c0ac6e0
+  [3] 'lmobj.tlp' meta=0x8c0ac6f8
+
+PTR_8c014b1c -> fread = 0x8c011650 (expect 0x8c011650)
+
+=== selobj.rlc string xrefs in ROM ===
+  string @ 0x8c0ac6b6
+
+=== Ghidra cross-refs (cached) ===
+  ghidra_textbox_trace.txt: references fread loader chain
+  ghidra_menu.txt: references fread loader chain
+  ghidra_menu_init.txt: references fread loader chain
+
+=== Runtime tests without debugger ===
+  1. Nuclear GDI (SELOBJ=0xFF): menu unchanged => disk SELOBJ not sole source
+  2. Trace GDI: hooks verified offline via verify_trace_patch.py
+  3. Flycast Save State (F5) -> flycast_state_scan.py <file.state>
+
+=== Expected trace tags (if hooks fire) ===
+  fread    0x00011650  path ptr in a0
+  load_rlc 0x00014A2E  path ptr in a0
+  menu     0x0000AF5C  state ptr in a0
+  attach   0x00014708  segment in a0

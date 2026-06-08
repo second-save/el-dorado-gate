@@ -1,0 +1,191 @@
+=== ? @8c04e6c0 ===
+
+=== ? @8c04e700 ===
+
+=== ? @8c04e740 ===
+
+=== ? @8c04e780 ===
+
+=== ? @8c04e7c0 ===
+
+=== ? @8c04e800 ===
+
+=== FUN_8c06b3de @8c06b3de ===
+
+void FUN_8c06b3de(uint param_1)
+
+{
+  int iVar1;
+  bool bVar2;
+  
+  iVar1 = DAT_8c06b60c;
+  bVar2 = (param_1 & 0xffff) != DAT_8c06b604;
+  *(undefined2 *)(DAT_8c06b60c + 0x12) = *(undefined2 *)(DAT_8c06b60c + 0x10);
+  *(short *)(iVar1 + 0x10) = (short)param_1;
+  if (bVar2) {
+    (*(code *)PTR_FUN_8c06b610)(0);
+    (*(code *)PTR_FUN_8c06b614)(0,param_1);
+    return;
+  }
+  (*(code *)PTR_FUN_8c06b618)(0);
+  return;
+}
+
+
+
+=== FUN_8c06b414 @8c06b414 ===
+
+void FUN_8c06b414(void)
+
+{
+  undefined2 uVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = DAT_8c06b60c;
+  uVar2 = DAT_8c06b604;
+  uVar1 = *(undefined2 *)(DAT_8c06b60c + 0x10);
+  *(undefined2 *)(DAT_8c06b60c + 0x10) = *(undefined2 *)(DAT_8c06b60c + 0x12);
+  *(undefined2 *)(iVar3 + 0x12) = uVar1;
+  if (*(ushort *)(iVar3 + 0x10) != uVar2) {
+    (*(code *)PTR_FUN_8c06b614)(0,(int)*(short *)(iVar3 + 0x10));
+    return;
+  }
+  (*(code *)PTR_FUN_8c06b618)(0);
+  return;
+}
+
+
+
+=== FUN_8c06b478 @8c06b478 ===
+
+void FUN_8c06b478(uint param_1)
+
+{
+  int iVar1;
+  bool bVar2;
+  
+  iVar1 = DAT_8c06b60c;
+  bVar2 = (param_1 & 0xffff) != DAT_8c06b604;
+  *(undefined2 *)(DAT_8c06b60c + 0x16) = *(undefined2 *)(DAT_8c06b60c + 0x14);
+  *(short *)(iVar1 + 0x14) = (short)param_1;
+  if (bVar2) {
+    (*(code *)PTR_FUN_8c06b610)(1,0);
+    (*(code *)PTR_FUN_8c06b614)(1,param_1);
+    return;
+  }
+  (*(code *)PTR_FUN_8c06b618)(1);
+  return;
+}
+
+
+
+=== FUN_8c06b4ae @8c06b4ae ===
+
+void FUN_8c06b4ae(void)
+
+{
+  undefined2 uVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = DAT_8c06b60c;
+  uVar2 = DAT_8c06b604;
+  uVar1 = *(undefined2 *)(DAT_8c06b60c + 0x14);
+  *(undefined2 *)(DAT_8c06b60c + 0x14) = *(undefined2 *)(DAT_8c06b60c + 0x16);
+  *(undefined2 *)(iVar3 + 0x16) = uVar1;
+  if (*(ushort *)(iVar3 + 0x14) != uVar2) {
+    (*(code *)PTR_FUN_8c06b614)(1,(int)*(short *)(iVar3 + 0x14));
+    return;
+  }
+  (*(code *)PTR_FUN_8c06b618)(1);
+  return;
+}
+
+
+
+=== ? @8c06b608 ===
+
+=== FUN_8c011220 @8c011220 ===
+
+undefined4 FUN_8c011220(undefined4 param_1,int param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  
+  uVar2 = 0xffffffff;
+  if (param_2 == 0) {
+    (*(code *)PTR_FUN_8c0113c8)(0xffffffd3,0,param_1);
+  }
+  iVar1 = FUN_8c011d8c();
+  if (iVar1 == 0) {
+    (*(code *)PTR_FUN_8c0113c8)(0xffffffd8,0,param_1);
+  }
+  else {
+    uVar2 = FUN_8c011d28(iVar1,param_1);
+    *(undefined4 *)(iVar1 + 4) = param_1;
+    *(int *)(iVar1 + 8) = param_2;
+    *(undefined4 *)(iVar1 + 0xc) = 0;
+    *(undefined2 *)(iVar1 + 0x10) = 1;
+    *(undefined2 *)(iVar1 + 0x12) = 1;
+  }
+  return uVar2;
+}
+
+
+
+=== ? @8c014b10 ===
+
+=== FUN_8c011650 @8c011650 ===
+
+/* WARNING: Removing unreachable block (ram,0x8c0116b0) */
+
+void FUN_8c011650(undefined4 param_1,int *param_2,int *param_3)
+
+{
+  undefined4 uVar1;
+  undefined4 local_80;
+  int *local_7c;
+  int *local_78;
+  undefined4 local_74;
+  undefined1 auStack_70 [4];
+  undefined1 auStack_6c [92];
+  undefined1 auStack_10 [4];
+  int iStack_c;
+  
+  local_80 = 0;
+  local_7c = param_3;
+  local_78 = param_2;
+  local_74 = param_1;
+  uVar1 = (*(code *)PTR_FUN_8c011710)(auStack_70,param_1,&local_80);
+  (*(code *)PTR_FUN_8c011714)(uVar1,0,auStack_6c);
+  uVar1 = (*(code *)PTR_FUN_8c011718)(auStack_6c,local_80,auStack_10);
+  (*(code *)PTR_FUN_8c011714)(uVar1,0,auStack_6c);
+  if (local_78 != (int *)0x0) {
+    *local_78 = iStack_c;
+  }
+  if (local_7c != (int *)0x0) {
+    *local_7c = iStack_c + DAT_8c0116f6 >> 0xb;
+  }
+  return;
+}
+
+
+
+=== XREFS file table 8c0b0828 ===
+
+=== STATIC STRUCTS ===
+bytes @8c181960: ??
+bytes @8c1969ec: ??
+bytes @8c0af4e0: 20bf0a8c34bf0a8c48bf0a8c5cbf0a8c70bf0a8c84bf0a8c98bf0a8cacbf0a8c
+bytes @8c0abf20: 5c4456495c454c5f42474d30302e44564900ffff5c4456495c454c5f42474d30
+=== SEGMENT DISPATCH TABLE (LE) ===
+  seg_cmd[0] 0x8c0af4e0 -> data
+  seg_cmd[1] 0x8c011650 -> FUN_8c011650
+  seg_cmd[2] 0x8c011098 -> FUN_8c011098
+  seg_cmd[3] 0x8c01177c -> FUN_8c01177c
+  seg_cmd[4] 0x8c0119b6 -> FUN_8c0119b6
+  seg_cmd[5] 0x8c0119a2 -> FUN_8c0119a2
+  seg_cmd[6] 0x0000fffd -> data
+  seg_cmd[7] 0x0000fffc -> data

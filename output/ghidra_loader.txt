@@ -1,0 +1,173 @@
+PTR @8c0192c8 -> 8c011650
+=== FUN_8c011650 @ 8c011650 ===
+
+/* WARNING: Removing unreachable block (ram,0x8c0116b0) */
+
+void FUN_8c011650(undefined4 param_1,int *param_2,int *param_3)
+
+{
+  undefined4 uVar1;
+  undefined4 local_80;
+  int *local_7c;
+  int *local_78;
+  undefined4 local_74;
+  undefined1 auStack_70 [4];
+  undefined1 auStack_6c [92];
+  undefined1 auStack_10 [4];
+  int iStack_c;
+  
+  local_80 = 0;
+  local_7c = param_3;
+  local_78 = param_2;
+  local_74 = param_1;
+  uVar1 = (*(code *)PTR_FUN_8c011710)(auStack_70,param_1,&local_80);
+  (*(code *)PTR_FUN_8c011714)(uVar1,0,auStack_6c);
+  uVar1 = (*(code *)PTR_FUN_8c011718)(auStack_6c,local_80,auStack_10);
+  (*(code *)PTR_FUN_8c011714)(uVar1,0,auStack_6c);
+  if (local_78 != (int *)0x0) {
+    *local_78 = iStack_c;
+  }
+  if (local_7c != (int *)0x0) {
+    *local_7c = iStack_c + DAT_8c0116f6 >> 0xb;
+  }
+  return;
+}
+
+
+
+PTR @8c0192cc -> 8c0e655e
+=== FUN_8c0e655e @ 8c0e655e ===
+
+void FUN_8c0e655e(void)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x8c0e6564. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (**(code **)*DAT_8c0e65cc)();
+  return;
+}
+
+
+
+PTR @8c0192d0 -> 8c011220
+=== FUN_8c011220 @ 8c011220 ===
+
+undefined4 FUN_8c011220(undefined4 param_1,int param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  
+  uVar2 = 0xffffffff;
+  if (param_2 == 0) {
+    (*(code *)PTR_FUN_8c0113c8)(0xffffffd3,0,param_1);
+  }
+  iVar1 = FUN_8c011d8c();
+  if (iVar1 == 0) {
+    (*(code *)PTR_FUN_8c0113c8)(0xffffffd8,0,param_1);
+  }
+  else {
+    uVar2 = FUN_8c011d28(iVar1,param_1);
+    *(undefined4 *)(iVar1 + 4) = param_1;
+    *(int *)(iVar1 + 8) = param_2;
+    *(undefined4 *)(iVar1 + 0xc) = 0;
+    *(undefined2 *)(iVar1 + 0x10) = 1;
+    *(undefined2 *)(iVar1 + 0x12) = 1;
+  }
+  return uVar2;
+}
+
+
+
+PTR @8c0192dc -> 8c01130c
+=== FUN_8c01130c @ 8c01130c ===
+
+undefined4 FUN_8c01130c(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  
+  uVar2 = 0xffffffff;
+  iVar1 = FUN_8c011d8c();
+  if (iVar1 == 0) {
+    (*(code *)PTR_FUN_8c0113c8)(0xffffffd8,0,param_1);
+  }
+  else {
+    uVar2 = FUN_8c011d28(iVar1,param_1);
+    *(undefined4 *)(iVar1 + 4) = param_1;
+    *(undefined4 *)(iVar1 + 8) = param_2;
+    *(undefined4 *)(iVar1 + 0xc) = 0;
+    *(undefined2 *)(iVar1 + 0x10) = 3;
+    *(undefined2 *)(iVar1 + 0x12) = 1;
+  }
+  return uVar2;
+}
+
+
+
+PTR @8c0192e4 -> 8c0114f8
+=== FUN_8c0114f8 @ 8c0114f8 ===
+
+int FUN_8c0114f8(void)
+
+{
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = -1;
+  iVar1 = FUN_8c011dac();
+  if (iVar1 == 0) {
+    (*(code *)PTR_FUN_8c0115d0)(0xffffffd6,0);
+  }
+  else {
+    iVar2 = (int)*(short *)(iVar1 + 0x12);
+  }
+  return iVar2;
+}
+
+
+
+PTR @8c0192e8 -> 8c01151e
+=== FUN_8c01151e @ 8c01151e ===
+
+undefined4 FUN_8c01151e(void)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  
+  uVar2 = 0;
+  iVar1 = FUN_8c011dac();
+  if (iVar1 == 0) {
+    (*(code *)PTR_FUN_8c0115d0)(0xffffffd6,0);
+  }
+  else if (*(short *)(iVar1 + 0x12) == 0) {
+    uVar2 = *(undefined4 *)(iVar1 + 0xc);
+  }
+  return uVar2;
+}
+
+
+
+PTR @8c0192c0 -> 8c014e6e
+=== FUN_8c014e6e @ 8c014e6e ===
+
+void FUN_8c014e6e(uint param_1)
+
+{
+  if (*(char *)((param_1 & 0xff) * 0x78 + DAT_8c014ea4) != '\0') {
+    (*(code *)PTR_FUN_8c014ea8)();
+    return;
+  }
+  return;
+}
+
+
+
+PTR @8c0193e4 -> 2fd62fe6
+  (no function)
+
+PTR @8c0193be -> 644ed024
+  (no function)
+

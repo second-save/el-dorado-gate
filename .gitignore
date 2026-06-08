@@ -1,0 +1,30 @@
+# Environment
+.env
+.env.*
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# macOS
+.DS_Store
+
+# Jeu original (rip GDI, extraction disque, images ISO)
+**/Eldorado Gate - Volume 1 (Japan)/
+CDRomance.url
+disc_extracted/
+*.iso
+
+# Versions patchées (GDI de test, disques modifiés, binaires patchés)
+disc_test/
+output/gdi_*/
+output/1ST_READ_trace.bin
+output/SELOBJ_*.RLC
+
+# Save states Flycast (données runtime)
+*.state
+
+# Métadonnées git imbriquées (vendored gditools)
+tools/gditools/.git/

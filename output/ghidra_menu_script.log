@@ -1,0 +1,61 @@
+2026-06-07 15:04:18 INFO  ghidra_decompile_menu.java> === MENU / OBJECT VM DECOMPILE ===  
+2026-06-07 15:04:18 INFO  ghidra_decompile_menu.java> === FUN_8c014e6e @ 8c014e6e ===  
+2026-06-07 15:04:18 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:18 INFO  ghidra_decompile_menu.java> === FUN_8c014eac @ 8c014eac ===  
+2026-06-07 15:04:18 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUN_8c014fe0 @ 8c014fe0 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUN_8c014fe0 @ 8c014fe0 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUN_8c0193e4 @ 8c0193e4 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUN_8c0193be @ 8c0193be ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUN_8c019420 @ 8c019420 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUN_8c018f48 @ 8c018f48 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUN_8c01927a @ 8c01927a ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> --- NO FUNCTION @ 8c0af900 ---  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> --- NO FUNCTION @ 8c0afa00 ---  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> --- NO FUNCTION @ 8c0afb00 ---  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUN_8c014708 @ 8c014708 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUN_8c014818 @ 8c014818 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> --- NO FUNCTION @ 8c014a00 ---  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === XREFS selobj.rlc @ 8c0ac6b0 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   from 8c0b0828 type=DATA fn=no_func  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === XREFS file table @ 8c0b0828 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === XREFS DAT_8c0150b8 ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   from 8c014eb6 fn=FUN_8c014eac @ 8c014eac  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   from 8c014ff2 fn=FUN_8c014fe0 @ 8c014fe0  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java>   from 8c014f1e fn=FUN_8c014f0c @ 8c014f0c  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> === FUNCTIONS NEAR 0x8c014000 (manual scan) ===  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014468 @ 8c014468  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c0144ac @ 8c0144ac  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c0144f8 @ 8c0144f8  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014532 @ 8c014532  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c01455e @ 8c01455e  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c01458a @ 8c01458a  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c0145ac @ 8c0145ac  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014608 @ 8c014608  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014670 @ 8c014670  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c0146a2 @ 8c0146a2  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c0146d6 @ 8c0146d6  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014708 @ 8c014708  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014818 @ 8c014818  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014a2e @ 8c014a2e  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014b28 @ 8c014b28  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014c1a @ 8c014c1a  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014c60 @ 8c014c60  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014cd0 @ 8c014cd0  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014e10 @ 8c014e10  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014e34 @ 8c014e34  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014e6e @ 8c014e6e  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014eac @ 8c014eac  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014f0c @ 8c014f0c  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c014fe0 @ 8c014fe0  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c0150d0 @ 8c0150d0  
+2026-06-07 15:04:19 INFO  ghidra_decompile_menu.java> FUN_8c015120 @ 8c015120  

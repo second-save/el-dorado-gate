@@ -1,0 +1,137 @@
+ELDORADO GATE — MENU TEXT BOX (final static analysis)
+Load base: 0x8C010000 (1ST_READ.BIN)
+
+=== CALL CHAIN (description text) ===
+vtable[0] @0x8c0692ac -> FUN_8c06af5c  (per-frame, cursor slot 0)
+  FUN_8c06b3a4 -> routing ushort grid @ *(*DAT_8c06b608+0x2c)
+  PTR_8c06b058 -> FUN_8c014708(slot, segment_index)
+    table@0x8c014848[seg] -> segment ptr; handler@0x8c01484c -> FUN_8c011650
+    FUN_8c011098 alloc; FUN_8c01177c text VM; FUN_8c014854 bind
+  PTR_8c06b06c -> FUN_8c014f0c (text box position / glyph blit loop)
+  PTR_8c06b064 -> FUN_8c014cd0 (alternate open, flags @ DAT_8c06b060)
+
+Initial RLC load: object vtable method @0x8c04e724
+  -> FUN_8c014a2e(slot, path=*(obj+4), ...)
+  PTR_8c014b1c -> FUN_8c011650 (fread)
+  PTR_8c014b10 -> FUN_8c01177c (VM setup)
+
+=== FILE TABLE @0x8c0b0828 (RLC/TPL paths) ===
+  [0] "\COMN\selobj.rlc" meta=0x8c0ac4fc
+  [1] "en_obj00.rlc" meta=0x8c0ac4fc
+  [2] "btl_fix.tlp" meta=0x8c0ac6e0
+  [3] "lmobj.tlp" meta=0x8c0ac6f8
+  [4] "\COMN\cardobj.tlp" meta=0x8c0ac718
+  [5] "\SCEN00\ptsel00.tlp" meta=0x8c0ac740
+  [6] "\SCEN01\ptsel01.tlp" meta=0x8c0ac768
+  [7] "\SCEN02\ptsel02.tlp" meta=0x8c0ac790
+
+=== SEGMENT DISPATCH TABLE @0x8c014848 (runtime-filled) ===
+  [0] 0x8c0af4e0 (segment ptr after load)
+  [1] 0x8c011650 FUN_8c011650
+  [2] 0x8c011098 FUN_8c011098
+  [3] 0x8c01177c FUN_8c01177c
+  [4] 0x8c0119b6 FUN_8c0119b6
+  [5] 0x8c0119a2 FUN_8c0119a2
+  [6] 0xfffd (segment ptr after load)
+  [7] 0xfffc (segment ptr after load)
+
+=== ? @8c04e724 ===
+
+=== FUN_8c01177c @8c01177c ===
+
+/* WARNING: Removing unreachable block (ram,0x8c0117b8) */
+
+void FUN_8c01177c(undefined4 *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined4 local_10 [2];
+  
+  local_10[0] = 0;
+  FUN_8c011c3a(param_1,local_10);
+  FUN_8c0119ec(param_1,local_10[0]);
+  (*(code *)PTR_FUN_8c011830)(*param_1,param_1 + 0xb);
+  FUN_8c011a56(param_1,0);
+  iVar1 = param_1[0xb];
+  iVar2 = (int)DAT_8c011804;
+  param_1[0xe] = iVar1;
+  param_1[0xc] = iVar1;
+  param_1[0xd] = iVar1 + iVar2 >> 0xb;
+  param_1[0x10] = 0;
+  param_1[0xf] = 0;
+  param_1[0x11] = 0;
+  param_1[0x12] = 0;
+  *(undefined1 *)((int)param_1 + 0x53) = 1;
+  *(undefined1 *)((int)param_1 + 0x4f) = 2;
+  *(undefined1 *)(param_1 + 0x14) = 0;
+  *(undefined1 *)((int)param_1 + 0x57) = 0;
+  *(undefined1 *)((int)param_1 + 0x4e) = 2;
+  FUN_8c011978(param_1,0,0);
+  FUN_8c0119a2(param_1,0);
+  FUN_8c0119b6(param_1,1);
+  return;
+}
+
+
+
+=== FUN_8c0119a2 @8c0119a2 ===
+
+void FUN_8c0119a2(int param_1,undefined1 param_2)
+
+{
+  if (param_1 == 0) {
+    uRam00000058 = 0;
+  }
+  else {
+    *(undefined1 *)(param_1 + 0x58) = param_2;
+  }
+  return;
+}
+
+
+
+=== FUN_8c0119b6 @8c0119b6 ===
+
+void FUN_8c0119b6(int param_1,undefined1 param_2)
+
+{
+  if (param_1 == 0) {
+    uRam00000056 = 0;
+  }
+  else {
+    *(undefined1 *)(param_1 + 0x56) = param_2;
+  }
+  *(undefined1 *)(param_1 + 0x54) =
+       *(undefined1 *)((uint)*(byte *)(param_1 + 0x56) * 4 + DAT_8c011ab0 + 3);
+  return;
+}
+
+
+
+=== FUN_8c01902c @8c01902c ===
+
+int FUN_8c01902c(void)
+
+{
+  char *pcVar1;
+  
+  pcVar1 = DAT_8c019074;
+  if (*DAT_8c019074 < '\x03') {
+    (**(code **)(PTR_PTR_8c019078 + *DAT_8c019074 * 4))(DAT_8c019074);
+  }
+  if (-1 < pcVar1[3]) {
+    pcVar1[0x19] = '\0';
+  }
+  return (int)pcVar1[3];
+}
+
+
+
+=== TRACE HOOK SITES (for 1ST_READ patch) ===
+  FUN_8c011650 @0x8c011650  tag=0x0001650  fread path in r4
+  FUN_8c014a2e @0x8c014a2e  tag=0x0014a2e  RLC load path in r5
+  FUN_8c06af5c @0x8c06af5c  tag=0x000af5c  menu handler slot0
+  FUN_8c014708 @0x8c014708  tag=0x0014708  segment attach r5=seg
+  ring buffer RAM @0x8c2fe000 (not in ROM)
+  code cave ROM @0x8c13d800

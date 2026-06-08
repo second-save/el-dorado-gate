@@ -1,0 +1,87 @@
+=== ? @8c014b10 ===
+
+=== FUN_8c011c3a @8c011c3a ===
+
+void FUN_8c011c3a(undefined4 *param_1)
+
+{
+  undefined4 uVar1;
+  int iVar2;
+  
+  uVar1 = DAT_8c011d10;
+  iVar2 = FUN_8c012b3a();
+  if (iVar2 != 0) {
+    FUN_8c0129d8(uVar1,0);
+    FUN_8c012a64(0);
+    *param_1 = *DAT_8c011d14;
+  }
+  return;
+}
+
+
+
+=== FUN_8c0119ec @8c0119ec ===
+
+void FUN_8c0119ec(int *param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = (*(code *)PTR_FUN_8c011ab4)(param_1 + 1);
+  *param_1 = iVar1;
+  if (iVar1 == 0) {
+    (*(code *)PTR_FUN_8c011ab8)(0xfffffff8,0,param_1 + 1);
+    return;
+  }
+  *DAT_8c011abc = *DAT_8c011abc + '\x01';
+  return;
+}
+
+
+
+=== FUN_8c011978 @8c011978 ===
+
+void FUN_8c011978(int param_1,undefined1 param_2,undefined2 param_3)
+
+{
+  if (param_1 == 0) {
+    uRam00000059 = 0;
+    uRam0000005a = 0;
+  }
+  else {
+    *(undefined1 *)(param_1 + 0x59) = param_2;
+    *(undefined2 *)(param_1 + 0x5a) = param_3;
+  }
+  return;
+}
+
+
+
+=== ? @8c069180 ===
+
+=== ? @8c069240 ===
+
+=== ? @8c07e850 ===
+
+=== ? @8c07ea50 ===
+
+=== FUN_8c06b1c6 @8c06b1c6 ===
+
+void FUN_8c06b1c6(void)
+
+{
+  undefined *puVar1;
+  int iVar2;
+  
+  iVar2 = DAT_8c06b37c;
+  puVar1 = PTR_FUN_8c06b378;
+  *(undefined2 *)(DAT_8c06b37c + 0x12) = *(undefined2 *)(DAT_8c06b37c + 0x10);
+  *(short *)(iVar2 + 0x10) = (short)DAT_8c06b370;
+  (*(code *)puVar1)(0);
+  return;
+}
+
+
+
+=== ? @8c06b388 ===
+
