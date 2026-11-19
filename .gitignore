@@ -28,3 +28,8 @@ output/SELOBJ_*.RLC
 
 # Métadonnées git imbriquées (vendored gditools)
 tools/gditools/.git/
+
+# Game data and analysis artifacts, never commit
+ghidra_project/
+*.rep/
+*.gpr
